@@ -111,7 +111,7 @@ def viral_propagation_patterns():
             "executionTimeMs": execution_time_ms
         })
     except Exception as e:
-        return jsonify({"error": str(e)}), 500
+        return "An internal error has occurred!", 500
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080)
