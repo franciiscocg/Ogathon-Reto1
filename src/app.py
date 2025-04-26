@@ -106,10 +106,7 @@ def viral_propagation_patterns():
         end_time = time.time()
         execution_time_ms = (end_time - start_time) * 1000
         
-        return jsonify({
-            "result": str(result),
-            "executionTimeMs": execution_time_ms
-        })
+        return str(result)
     except Exception as e:
         return "An internal error has occurred!", 500
 
